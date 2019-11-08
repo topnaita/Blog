@@ -5,7 +5,7 @@ app = Flask(__name__)
 post = [
     {
         'author' : 'javier',
-        'title' : 'First Blog',
+        'title' : 'First post',
         'content' : 'new york',
         'date_posted' : 'april 22 2019'    
 
@@ -13,7 +13,7 @@ post = [
     },
     {
         'author' : 'jean',
-        'title' : 'Second Blog',
+        'title' : 'Second post',
         'content' : 'france',
         'date_posted' : 'april 22 2019'
 
