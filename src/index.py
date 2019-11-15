@@ -1,9 +1,16 @@
 from flask import Flask, render_template, url_for, flash, redirect 
 from forms import RegistratitonForm, LoginForm
-
+from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'kfjmdo771e0fcod55e48e789w5d2c'
+app.config['SLQALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+
+db = SQLAlchemy(app)
+
+
+
+
 post = [
     {
         'author' : 'javier',
@@ -38,7 +45,7 @@ def about():
 def register(): 
     form = RegistratitonForm()
     if form.validate_on_submit():
-        flash(f'account created for {form.username.data}!', 'success')
+        flash(f'Account created for {form.username.data}!', 'success') #concatenacion
         return redirect(url_for('home'))
     return render_template('register.html', title='Register', form=form)
 
