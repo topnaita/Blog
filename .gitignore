@@ -1,4 +1,6 @@
 venv
-.vscode
-site.db
 __pycache__
+.vscode
+.mypy_cache
+
+

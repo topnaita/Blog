@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "venv\\Scripts\\python.exe"
+    "python.pythonPath": "venv\\Scripts\\python.exe",
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": false,
+    "python.linting.prospectorEnabled": true,
+    "python.linting.mypyEnabled": false
 }
